@@ -1,0 +1,38 @@
+body.dark
+{
+    color: var(--white);
+    background: var(--deepBlue)
+}
+
+body.dark #screen
+{
+    background: var(--darkBlue);
+    color: var(--white);
+}
+
+body.dark #menuBtn
+{
+    color: var(--white);
+}
+
+body.dark #brandLogo
+{
+    color: var(--lightBlue);
+}
+
+body.dark .menu
+{
+    background: var(--darkBlue);
+    color: var(--white);
+}
+
+body.dark #transDiv.showed
+{
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+body.dark #circle
+{
+    left: calc(100% - 9px);
+    background: var(--darkBlue);
+}

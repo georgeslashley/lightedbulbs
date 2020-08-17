@@ -1,0 +1,98 @@
+<!doctype html>
+<!-- Commence le 13 aout 2020 -->
+<html lang="fr">
+    <head id="">
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700&family=Sriracha&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="index.css"/>
+        <link rel="stylesheet" type="text/css" href="theme.css"/>
+        <title>LightedBulbs - MobileWeb Game</title>
+    </head>
+    <body id="body" class="hasard">
+        <section id="screen" class="">
+            <div id="screenHeader" class="screenPart">
+                <h1 id="brandLogo">LightedBulb</h1>
+                <button id="menuBtn"><span class="iconify" data-inline="false" data-icon="heroicons-outline:menu-alt-3"></span></button>
+            </div>
+            <div id="screenBodyHead" class="screenPart">
+                <div id="consigneDiv" class="screenSect">
+                    <p id="consigne">Allumez toutes les ampoules, d’une<br>couleur <span id="difChoice">identique</span>.</p>
+                </div>
+                <div id="bulbsBoxDiv" class="screenSect">
+                    <div class="bulbBox">
+                        <span class="iconify bulbIc" data-inline="false" data-icon="octicon:light-bulb-24"></span>
+                    </div>
+                    <div class="bulbBox">
+                        <span class="iconify bulbIc" data-inline="false" data-icon="octicon:light-bulb-24"></span>
+                    </div>
+                    <div class="bulbBox">
+                        <span class="iconify bulbIc" data-inline="false" data-icon="octicon:light-bulb-24"></span>
+                    </div>
+                    <div class="bulbBox">
+                        <span class="iconify bulbIc" data-inline="false" data-icon="octicon:light-bulb-24"></span>
+                    </div>
+                </div>
+            </div>
+            <div id="screenBody" class="screenPart">
+                <button class="boltBtn" id=""><span class="iconify" data-inline="false" data-icon="clarity:bolt-line"></span></button>
+                <button class="boltBtn" id=""><span class="iconify" data-inline="false" data-icon="clarity:bolt-line"></span></button>
+                <button class="boltBtn" id=""><span class="iconify" data-inline="false" data-icon="clarity:bolt-line"></span></button>
+                <button class="boltBtn" id=""><span class="iconify" data-inline="false" data-icon="clarity:bolt-line"></span></button>
+            </div>
+            <div id="screenFoot" class="screenPart">
+                <p id="endGameComment"></p>
+                <button id="restartBtn">Recommencer</button>
+            </div>
+        </section>
+        <section id="transDiv" class="">
+            <div id="menues">
+                <div id="difChoiceMenu" class="menu">
+                    <div class="menuTitleDiv">
+                        <h3>Difficulte de couleur :</h3>
+                    </div>
+                    <div id="difContent" class="menuContent">
+                        <div id="" class="colorChoice active" style="background-color:var(--gray);">H</div>
+                        <div id="" class="colorChoice" style="background-color:var(--purple);"></div>
+                        <div id="" class="colorChoice" style="background-color:var(--red);"></div>
+                        <div id="" class="colorChoice" style="background-color:var(--green);"></div>
+                        <div id="" class="colorChoice" style="background-color:var(--yellow);"></div>
+                    </div>
+                </div>
+                <div id="scoreMenu" class="menu">
+                    <div class="menuTitleDiv">
+                        <h3>Votre Score :</h3>
+                    </div>
+                    <div id="scoreDataBox" class="menuContent">
+                        <div id="" class="scooreDataDiv">
+                            <p class="scoreDataTitle">Nombre d'essais :</p>
+                            <p id="timePlayed" class="scoreDataDigit">0</p>
+                        </div>
+                        <div id="" class="scooreDataDiv">
+                            <p class="scoreDataTitle">Objectif atteint :</p>
+                            <p id="timeWon" class="scoreDataDigit">0</p>
+                        </div>
+                        <div id="" class="scooreDataDiv">
+                            <p class="scoreDataTitle">Objectif non atteint :</p>
+                            <p id="timeLost" class="scoreDataDigit">0</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="darkmodeMenu" class="menu">
+                    <div class="menuTitleDiv">
+                        <h3>Mode Sombre :</h3>
+                    </div>
+                    <div class="menuContent">
+                        <div id="swithBtn">
+                            <div id="circle"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button id="resetBtn"><span class="iconify" data-inline="false" data-icon="ic:round-settings-backup-restore"></span></button>
+        </section>
+        <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+        <script type="text/javascript" src="index.js"></script>
+    </body>
+</html>
